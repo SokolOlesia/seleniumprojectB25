@@ -12,6 +12,7 @@ public class Yahoo_Task1 {
         driver.get("https://yahoo.com");
 
         System.out.println(driver.getTitle().substring(0, driver.getTitle().indexOf(" |")));
+
         driver.close();
     }
 }
