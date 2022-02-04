@@ -49,10 +49,10 @@ public class BasicNavigations {
         currentURL = driver.getCurrentUrl();
         System.out.println("currentURL = " + currentURL);
 
-        //close the window
+        //close the window(tab)
         driver.close();
 
-        //close all of the open windows
+        //close all the open windows(Exceptions: NoSuchSessionException)
         driver.quit();
 
 
