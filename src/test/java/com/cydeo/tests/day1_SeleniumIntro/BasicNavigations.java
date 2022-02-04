@@ -13,6 +13,9 @@ public class BasicNavigations {
         driver.manage().window().maximize();
         driver.get("https://tesla.com");
 
+        //full screen
+        driver.manage().window().fullscreen();
+
         String currentTitle = driver.getTitle();
         System.out.println("currentTitle = " + currentTitle);
 
@@ -45,6 +48,12 @@ public class BasicNavigations {
         //get current URL
         currentURL = driver.getCurrentUrl();
         System.out.println("currentURL = " + currentURL);
+
+        //close the window
+        driver.close();
+
+        //close all of the open windows
+        driver.quit();
 
 
     }
