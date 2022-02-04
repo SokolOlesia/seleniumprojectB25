@@ -9,11 +9,15 @@ public class BasicNavigations {
         WebDriverManager.chromedriver().setup();
 
         WebDriver driver = new ChromeDriver();
-
+        //maximize page
+        driver.manage().window().maximize();
         driver.get("https://tesla.com");
 
         String currentTitle = driver.getTitle();
+        System.out.println("currentTitle = " + currentTitle);
 
+        String currentURL = driver.getCurrentUrl();
+        System.out.println("currentURL = " + currentURL);
         //Stop code execution for 3 seconds
         Thread.sleep(3000);
 
@@ -38,7 +42,10 @@ public class BasicNavigations {
         //getTitle()
         System.out.println("driver.getTitle() = " + driver.getTitle());
 
-        System.out.println("currentTitle = " + currentTitle);
+        //get current URL
+        currentURL = driver.getCurrentUrl();
+        System.out.println("currentURL = " + currentURL);
+
 
     }
 }
