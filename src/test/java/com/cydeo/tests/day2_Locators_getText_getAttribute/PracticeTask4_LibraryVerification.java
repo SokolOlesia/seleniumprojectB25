@@ -26,12 +26,12 @@ public class PracticeTask4_LibraryVerification {
 
 //        5. Locate Sign in button using “tagName” locator
         WebElement signInButton = driver.findElement(By.tagName("button"));
-
+        signInButton.click();
 
 //        6. Verify: visually “Sorry, Wrong Email or Password”
 //        displayed
 
-        driver.close();
+        //driver.close();
     }
 }
 
