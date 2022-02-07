@@ -31,7 +31,7 @@ public class PracticeTask4_LibraryVerification {
 //        6. Verify: visually “Sorry, Wrong Email or Password”
 //        displayed
 
-        //driver.close();
+        driver.close();
     }
 }
 
