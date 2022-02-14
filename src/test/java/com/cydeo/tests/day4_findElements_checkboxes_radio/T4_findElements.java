@@ -23,10 +23,13 @@ public class T4_findElements {
 //        4- Print out the number of the links on the page.
         System.out.println("allLinks.size() = " + allLinks.size());
 //        5- Print out the texts of the links.
+//        6- Print out the HREF attribute values of the links
         for (WebElement allLink : allLinks) {
             System.out.println(allLink.getText());
+            System.out.println(allLink.getAttribute("href"));
         }
-//        6- Print out the HREF attribute values of the links
+
+
         driver.close();
     }
 }
