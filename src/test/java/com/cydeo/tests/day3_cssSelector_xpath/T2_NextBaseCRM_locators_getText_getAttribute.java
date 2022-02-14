@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 
 public class T2_NextBaseCRM_locators_getText_getAttribute {
     public static void main(String[] args) {
-        WebDriver driver = WebDriverFactory.gerDriver("chrome");
+        WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.get("https://login2.nextbasecrm.com/");
 

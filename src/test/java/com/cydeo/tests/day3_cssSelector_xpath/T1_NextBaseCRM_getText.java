@@ -10,7 +10,7 @@ public class T1_NextBaseCRM_getText {
 
 //        WebDriverManager.chromedriver().setup();
 //        WebDriver driver = new ChromeDriver();
-        WebDriver driver = WebDriverFactory.gerDriver("chrome");
+        WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.get("https://login2.nextbasecrm.com/");
 

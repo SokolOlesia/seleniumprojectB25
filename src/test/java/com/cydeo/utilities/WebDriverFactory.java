@@ -16,7 +16,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 // RETURN TYPE: "WebDriver"
  */
 public class WebDriverFactory {
-    public static WebDriver gerDriver(String browserType) {
+    public static WebDriver getDriver(String browserType) {
         if (browserType.equalsIgnoreCase("chrome")) {
 
             WebDriverManager.chromedriver().setup();
