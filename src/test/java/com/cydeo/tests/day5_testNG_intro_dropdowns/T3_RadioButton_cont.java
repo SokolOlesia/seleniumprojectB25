@@ -28,12 +28,14 @@ public class T3_RadioButton_cont {
 
     }
     public static void clickAndVerifyRadioButton(WebDriver driver, String nameAttribute, String idValue){
-        List<WebElement> radioButtons = driver.findElements(By.name(nameAttribute));
+        List<WebElement> radioButtons = driver.findElements(By.name(nameAttribute)); // sport -->[Basketball, Football, Hockey]
 
         for (WebElement radioButton : radioButtons) {
-            String radioButtonId = radioButton.getAttribute("id");
+            String radioButtonId = radioButton.getAttribute("id"); //id of each //basketball, football, hockey
 
             if(radioButtonId.equals(idValue)){
+                //basketball.equals(hockey)? no, no click
+                //hockey.equals(hockey)? yes, click and print
                 radioButton.click();
                 System.out.println(radioButtonId + " is selected : " + radioButton.isSelected());
                 break;
