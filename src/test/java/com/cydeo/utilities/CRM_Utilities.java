@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.concurrent.TimeUnit;
+
 public class CRM_Utilities {
     /*
     This method will log in with helpdesk1@cybertekschool.com
@@ -35,12 +37,17 @@ public class CRM_Utilities {
         //Helpdesk2@cybertekschool.com  UserUser
 
         //4. Enter valid password
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         WebElement inputPassword = driver.findElement(By.xpath("//input[@name='USER_PASSWORD']"));
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         inputPassword.sendKeys(password);
 
         //5. Click to Log In button
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         WebElement loginButton = driver.findElement(By.xpath("//input[@value='Log In']"));
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         loginButton.click();
+        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
     }
 
 }
