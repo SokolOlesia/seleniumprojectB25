@@ -61,7 +61,7 @@ public class T1_Registration_form extends TestBase {
 
 //        12. Select Job Title
         Select jobTitle = new Select(Driver.getDriver().findElement(By.xpath("//select[@name='job_title']")));
-        jobTitle.selectByIndex(5);
+        jobTitle.selectByIndex(faker.number().numberBetween(1,3));
 
 //        13. Select programming language from checkboxes
         WebElement language = Driver.getDriver().findElement(By.xpath("//input[@id='inlineCheckbox2']"));
