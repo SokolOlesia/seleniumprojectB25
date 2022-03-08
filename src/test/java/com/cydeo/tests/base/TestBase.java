@@ -11,7 +11,7 @@ public class TestBase {
 
     @BeforeMethod
     public void setUp(){
-        Driver.getDriver().get(ConfigurationReader.getProperty("registrationFormURl"));
+        Driver.getDriver().get(ConfigurationReader.getProperty("upload"));
         //Driver.getDriver();
     }@AfterMethod
     public void tearDown(){
