@@ -1,21 +1,19 @@
 package com.cydeo.tests.base;
 
+import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
-import static com.cydeo.utilities.ConfigurationReader.getProperty;
 
 public class TestBase {
     protected WebDriver driver;
 
     @BeforeMethod
     public void setUp(){
-        Driver.getDriver().get(getProperty("registration_form_URl"));
+        Driver.getDriver().get(ConfigurationReader.getProperty("registrationFormURl"));
         //Driver.getDriver();
-    }
-    @AfterMethod
+    }@AfterMethod
     public void tearDown(){
         Driver.closeDriver();
     }
