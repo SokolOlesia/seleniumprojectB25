@@ -1,4 +1,4 @@
-package com.cydeo.tests.try_crm;
+package com.cydeo.tests.try_project;
 
 import com.cydeo.utilities.CRM_Utilities;
 import com.cydeo.utilities.ConfigurationReader;

@@ -9,11 +9,13 @@ public class TestBase {
     protected WebDriver driver;
 
     @BeforeMethod
-    public void setUp(){
-        //Driver.getDriver().get(ConfigurationReader.getProperty("upload"));
+    public void setUp() {
+        //Driver.getDriver().get(ConfigurationReader.getProperty("envvy"));
         Driver.getDriver();
-    }@AfterMethod
-    public void tearDown(){
+    }
+
+    @AfterMethod
+    public void tearDown() {
         Driver.closeDriver();
     }
 
