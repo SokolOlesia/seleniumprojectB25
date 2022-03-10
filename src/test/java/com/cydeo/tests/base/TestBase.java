@@ -10,7 +10,6 @@ public class TestBase {
 
     @BeforeMethod
     public void setUp() {
-        //Driver.getDriver().get(ConfigurationReader.getProperty("envvy"));
         Driver.getDriver();
     }
 
