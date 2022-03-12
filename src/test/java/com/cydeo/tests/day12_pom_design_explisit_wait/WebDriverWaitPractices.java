@@ -34,7 +34,7 @@ public class WebDriverWaitPractices {
     }
 
     @Test
-    public void dynamyc_load_1_test(){
+    public void dynamic_load_1_test(){
 
         //1. Go to https://practice.cydeo.com/dynamic_loading/1
         Driver.getDriver().get("https://practice.cydeo.com/dynamic_loading/1");
